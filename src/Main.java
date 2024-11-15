@@ -5,5 +5,12 @@ public class Main {
         Animal animalEagle = new Eagle();
         Animal animalTurtle = new Turtle();
 
+        Animal[] animals = {animalShark,animalEagle,animalTurtle};
+
+        for (Animal animal : animals) {
+            if (animal instanceof Animal){
+                System.out.println(animal.getClass());
+            }
+        }
     }
 }
